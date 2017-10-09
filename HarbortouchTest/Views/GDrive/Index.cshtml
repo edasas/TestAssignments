@@ -1,0 +1,90 @@
+﻿@model  HarbortouchTest.Helpers.GDriveItems
+
+<script type="text/javascript" src="@Url.Content("~/Scripts/Scripts.js")"></script>
+<script type="text/javascript">
+    document.addEventListener('DOMContentLoaded', function () {        
+        Harbortouch.RegisterSearch("nameSearch", "table", "name");        
+    }, false);
+</script>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Google drive Index</h2>
+<p> 
+    <input type="button" class="btn btn-info" value="Upload files" data-toggle="modal" data-target="#myModal" />
+</p>
+
+<div id="messages">
+    @if (Model.Messages != null && Model.Messages.Count > 0)
+    {
+        foreach (var msg in Model.Messages)
+        {            
+        <div class="alert fade in alert-dismissable @msg.MessageType">
+            <a href="#" class="close" data-dismiss="alert" aria-label="close" title="close">×</a>
+            <strong>@msg.BoldMessage</strong> @msg.Message
+        </div>
+        }
+        Model.Messages.Clear();
+    }
+</div>
+<table id="table" class="table">
+    <tr>
+        <th>
+            <span>Name</span>
+        </th>
+        <th></th>
+    </tr>
+    <tr>
+        <td>
+            <input id="nameSearch" type="text" class="form-control" placeholder="Name.." />
+        </td>
+    </tr>
+    @foreach (var item in Model.Items)
+    {
+        <tr class="model-line">
+            <td class="name">
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+            <td>
+                @Html.ActionLink("Download", "Download", new { id = item.Id, name = item.Name }) |
+                @Html.ActionLink("Delete", "Delete", new { id = item.Id, name = item.Name})
+            </td>
+        </tr>
+    }
+
+</table>
+
+
+<!-- Modal -->
+<div id="myModal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Modal Header</h4>
+            </div>
+            <div class="modal-body">
+                <form action="" method="post" enctype="multipart/form-data">
+
+                    <label for="file1">Filename:</label>
+                    <input type="file" name="files" id="file1" />
+                    <br />
+
+                    <label for="file2">Filename:</label>
+                    <input type="file" name="files" id="file2" />
+                    <br />
+
+                    <input type="submit" class="btn btn-primary" />
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+
+    </div>
+</div>

@@ -1,0 +1,10 @@
+﻿@model HarbortouchTest.Models.TenantRentingData
+
+<fieldset>
+    @Html.HiddenFor(model=>model.Id)
+    @Html.CheckBoxFor(model => model.IsRenting)
+    @Html.DisplayFor(model => model.TenantName)
+    @Html.DisplayFor(model => model.DateString)
+    @Html.DisplayFor(model => model.Cost)
+</fieldset>
+

@@ -1,0 +1,18 @@
+e:\documents\visual studio 2017\Projects\DCSL_Test\DCSL_Test\bin\Debug\DCSL_Test.exe.config
+e:\documents\visual studio 2017\Projects\DCSL_Test\DCSL_Test\bin\Debug\DCSL_Test.exe
+e:\documents\visual studio 2017\Projects\DCSL_Test\DCSL_Test\bin\Debug\DCSL_Test.pdb
+e:\documents\visual studio 2017\Projects\DCSL_Test\DCSL_Test\obj\Debug\DCSL_Test.csprojResolveAssemblyReference.cache
+e:\documents\visual studio 2017\Projects\DCSL_Test\DCSL_Test\obj\Debug\DCSL_Test.Form1.resources
+e:\documents\visual studio 2017\Projects\DCSL_Test\DCSL_Test\obj\Debug\DCSL_Test.Properties.Resources.resources
+e:\documents\visual studio 2017\Projects\DCSL_Test\DCSL_Test\obj\Debug\DCSL_Test.csproj.GenerateResource.Cache
+e:\documents\visual studio 2017\Projects\DCSL_Test\DCSL_Test\obj\Debug\DCSL_Test.exe
+e:\documents\visual studio 2017\Projects\DCSL_Test\DCSL_Test\obj\Debug\DCSL_Test.pdb
+C:\Projects\CSharp\DCSL_Test\DCSL_Test\bin\Debug\DCSL_Test.exe.config
+C:\Projects\CSharp\DCSL_Test\DCSL_Test\bin\Debug\DCSL_Test.exe
+C:\Projects\CSharp\DCSL_Test\DCSL_Test\bin\Debug\DCSL_Test.pdb
+C:\Projects\CSharp\DCSL_Test\DCSL_Test\obj\Debug\DCSL_Test.csprojResolveAssemblyReference.cache
+C:\Projects\CSharp\DCSL_Test\DCSL_Test\obj\Debug\DCSL_Test.Form1.resources
+C:\Projects\CSharp\DCSL_Test\DCSL_Test\obj\Debug\DCSL_Test.Properties.Resources.resources
+C:\Projects\CSharp\DCSL_Test\DCSL_Test\obj\Debug\DCSL_Test.csproj.GenerateResource.Cache
+C:\Projects\CSharp\DCSL_Test\DCSL_Test\obj\Debug\DCSL_Test.exe
+C:\Projects\CSharp\DCSL_Test\DCSL_Test\obj\Debug\DCSL_Test.pdb

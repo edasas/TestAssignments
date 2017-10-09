@@ -1,0 +1,90 @@
+﻿@model HarbortouchTest.Helpers.TenantItems
+
+<script type="text/javascript" src="@Url.Content("~/Scripts/Scripts.js")"></script>
+<script type="text/javascript">
+        document.addEventListener('DOMContentLoaded', function () {
+            Harbortouch.RegisterSearch("nameSearch", "table", "name");
+            Harbortouch.RegisterSearch("sDateSearch", "table", "startDate");
+            Harbortouch.RegisterSearch("eDateSearch", "table", "endDate");
+            Harbortouch.RegisterSearch("costSearch", "table", "cost");
+        }, false);
+</script>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Tenant Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create", null, new { @class = "btn btn-info" })
+</p>
+<div id="messages">
+    @if (Model.Messages != null && Model.Messages.Count > 0)
+    {
+        foreach (var msg in Model.Messages)
+        {
+            <div class="alert fade in alert-dismissable @msg.MessageType">
+                <a href="#" class="close" data-dismiss="alert" aria-label="close" title="close">×</a>
+                <strong>@msg.BoldMessage</strong> @msg.Message
+            </div>
+        }
+        Model.Messages.Clear();
+    }
+</div>
+<table id="table" class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Items.FirstOrDefault().Name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Items.FirstOrDefault().StartDate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Items.FirstOrDefault().EndDate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Items.FirstOrDefault().Cost)
+        </th>
+        <th></th>
+    </tr>
+    <tr>
+        <td>
+            <input type="text" id="nameSearch" class="form-control" placeholder="Name..." />
+        </td>
+        <td>
+            <input type="text" id="sDateSearch" class="form-control" placeholder="Start date..." />
+        </td>
+        <td>
+            <input type="text" id="eDateSearch" class="form-control" placeholder="End date..." />
+        </td>
+        <td>
+            <input type="text" id="costSearch" class="form-control" placeholder="Cost..." />
+        </td>        
+        <td></td>
+    </tr>
+
+@foreach (var item in Model.Items) {
+    <tr class="model-line">
+        <td class="name">
+            @Html.DisplayFor(modelItem => item.Name)
+        </td>
+        <td class="startDate">
+            @Html.DisplayFor(modelItem => item.StartDate)
+        </td>
+        <td class="endDate">
+            @Html.DisplayFor(modelItem => item.EndDate)
+        </td>
+        <td class="cost">
+            @Html.DisplayFor(modelItem => item.Cost)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |
+            @Html.ActionLink("Details", "Details", new { id=item.Id }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.Id })
+        </td>
+    </tr>
+}
+
+</table>

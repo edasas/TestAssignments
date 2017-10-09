@@ -1,0 +1,12 @@
+E:\Documents\Visual Studio 2017\Projects\SocketServerTest\SocketServerTest\bin\Debug\DNB_Signing_Team_Test.exe.config
+E:\Documents\Visual Studio 2017\Projects\SocketServerTest\SocketServerTest\bin\Debug\DNB_Signing_Team_Test.exe
+E:\Documents\Visual Studio 2017\Projects\SocketServerTest\SocketServerTest\bin\Debug\DNB_Signing_Team_Test.pdb
+E:\Documents\Visual Studio 2017\Projects\SocketServerTest\SocketServerTest\obj\Debug\SocketServerTest.csprojResolveAssemblyReference.cache
+E:\Documents\Visual Studio 2017\Projects\SocketServerTest\SocketServerTest\obj\Debug\DNB_Signing_Team_Test.exe
+E:\Documents\Visual Studio 2017\Projects\SocketServerTest\SocketServerTest\obj\Debug\DNB_Signing_Team_Test.pdb
+C:\Projects\CSharp\SocketServerTest\SocketServerTest\bin\Debug\DNB_Signing_Team_Test.exe.config
+C:\Projects\CSharp\SocketServerTest\SocketServerTest\bin\Debug\DNB_Signing_Team_Test.exe
+C:\Projects\CSharp\SocketServerTest\SocketServerTest\bin\Debug\DNB_Signing_Team_Test.pdb
+C:\Projects\CSharp\SocketServerTest\SocketServerTest\obj\Debug\SocketServerTest.csprojResolveAssemblyReference.cache
+C:\Projects\CSharp\SocketServerTest\SocketServerTest\obj\Debug\DNB_Signing_Team_Test.exe
+C:\Projects\CSharp\SocketServerTest\SocketServerTest\obj\Debug\DNB_Signing_Team_Test.pdb
